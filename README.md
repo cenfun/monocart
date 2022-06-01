@@ -1,3 +1,5 @@
+![](/assets/monocart.jpg)
+
 # monocart
 > Web UI Automation Test Tool based on [playwright](https://github.com/microsoft/playwright)
 
