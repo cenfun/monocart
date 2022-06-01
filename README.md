@@ -1,7 +1,7 @@
 ![](/assets/monocart.jpg)
 
 # monocart
-> Web UI Automation Test Tool based on [playwright](https://github.com/microsoft/playwright)
+> Web UI automation test tool based on [playwright](https://github.com/microsoft/playwright)
 
 ## Install
 ```sh

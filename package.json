@@ -1,7 +1,7 @@
 {
     "name": "monocart",
     "version": "1.0.0",
-    "description": "",
+    "description": "Web UI automation test tool based on playwright",
     "bin": {
         "monocart": "./lib/cli.js"
     },
@@ -10,6 +10,10 @@
         "lib",
         "config"
     ],
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/cenfun/monocart.git"
+    },
     "scripts": {
         "lint": "npx eslint lib --fix"
     },
