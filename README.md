@@ -11,5 +11,13 @@ npm i monocart
 ## Usage
 ```sh
 npx monocart test [config.default.js] -s <spec> -d
-
 ```
+
+## Features
+
+- playwright and @playwright/test
+- lint test codes (eslint + check naming)
+- building client library helper
+- customize test config
+- customize test reports (playwright-report-grid)
+- code coverage/request capturer (TODO)
