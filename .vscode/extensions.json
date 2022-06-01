@@ -1,0 +1,9 @@
+{
+	"recommendations": [
+		"dbaeumer.vscode-eslint",
+		"eamodio.gitlens",
+		"gruntfuggly.todo-tree",
+		"streetsidesoftware.code-spell-checker",
+		"zengxingxin.sort-js-object-keys"
+	]
+}

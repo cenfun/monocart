@@ -1,0 +1,40 @@
+{
+    "name": "monocart",
+    "version": "1.0.0",
+    "description": "",
+    "bin": {
+        "monocart": "./lib/cli.js"
+    },
+    "main": "./lib/index.js",
+    "files": [
+        "lib",
+        "config"
+    ],
+    "scripts": {
+        "lint": "npx eslint lib --fix"
+    },
+    "dependencies": {
+        "@playwright/test": "^1.22.2",
+        "axios": "^0.27.2",
+        "commander": "^9.3.0",
+        "console-grid": "^1.0.17",
+        "js-beautify": "^1.14.3",
+        "lodash": "^4.17.21",
+        "nodemailer": "^6.7.5",
+        "playwright": "^1.22.2",
+        "playwright-report-grid": "^1.0.2",
+        "rimraf": "^3.0.2",
+        "screencast-gif": "^1.0.1",
+        "semver": "^7.3.7",
+        "serialize-javascript": "^6.0.0",
+        "shelljs": "^0.8.5",
+        "webpack": "^5.72.1",
+        "webpack-stats-report": "^2.0.0"
+    },
+    "devDependencies": {
+        "eslint": "^8.16.0",
+        "eslint-config-plus": "^1.0.3",
+        "eslint-plugin-chain": "^2.0.0",
+        "eslint-plugin-html": "^6.2.0"
+    }
+}

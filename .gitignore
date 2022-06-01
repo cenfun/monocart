@@ -1,0 +1,5 @@
+node_modules/
+/.temp
+/packages/**/*.map
+/packages/report/dist/report-data.js
+/package-lock.json
