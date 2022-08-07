@@ -12,6 +12,8 @@ npm i monocart
 ```sh
 npx monocart test [config.default.js] -s <spec> -d
 ```
+## Example Project
+[https://github.com/cenfun/monocart-test](https://github.com/cenfun/monocart-test)
 
 ## Features
 
