@@ -15,7 +15,8 @@
         "url": "git+https://github.com/cenfun/monocart.git"
     },
     "scripts": {
-        "lint": "npx eslint lib --fix"
+        "lint": "npx eslint lib --fix",
+        "patch": "npm run lint && sf publish patch"
     },
     "dependencies": {
         "axios": "^0.27.2",
