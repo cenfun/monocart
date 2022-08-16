@@ -21,11 +21,11 @@
     "dependencies": {
         "axios": "^0.27.2",
         "commander": "^9.4.0",
-        "console-grid": "^1.0.17",
+        "console-grid": "^2.0.0",
         "js-beautify": "^1.14.5",
         "lodash": "^4.17.21",
         "monocart-reporter": "^1.0.2",
-        "nodemailer": "^6.7.7",
+        "nodemailer": "^6.7.8",
         "playwright": "^1.25.0",
         "rimraf": "^3.0.2",
         "screencast-gif": "^1.0.1",
@@ -36,7 +36,7 @@
         "webpack-stats-report": "^2.0.2"
     },
     "devDependencies": {
-        "eslint": "^8.21.0",
+        "eslint": "^8.22.0",
         "eslint-config-plus": "^1.0.3",
         "eslint-plugin-chain": "^2.0.0",
         "eslint-plugin-html": "^7.1.0"
