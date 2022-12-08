@@ -1,6 +1,6 @@
 {
     "name": "monocart",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "description": "Web UI automation test tool based on playwright",
     "main": "./lib/index.js",
     "bin": {
