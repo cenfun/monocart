@@ -2,10 +2,14 @@
     "name": "monocart",
     "version": "1.0.2",
     "description": "Web UI automation test tool based on playwright",
+    "main": "./lib/index.js",
     "bin": {
         "monocart": "./lib/cli.js"
     },
-    "main": "./lib/index.js",
+    "scripts": {
+        "lint": "npx eslint lib --fix",
+        "patch": "npm run lint && sf publish patch"
+    },
     "files": [
         "lib",
         "config"
@@ -14,30 +18,26 @@
         "type": "git",
         "url": "git+https://github.com/cenfun/monocart.git"
     },
-    "scripts": {
-        "lint": "npx eslint lib --fix",
-        "patch": "npm run lint && sf publish patch"
-    },
     "dependencies": {
         "axios": "^0.27.2",
-        "commander": "^9.4.0",
-        "console-grid": "^2.0.0",
-        "js-beautify": "^1.14.5",
+        "commander": "^9.4.1",
+        "console-grid": "^2.0.1",
+        "js-beautify": "^1.14.7",
         "lodash": "^4.17.21",
-        "monocart-reporter": "^1.0.2",
-        "nodemailer": "^6.7.8",
-        "playwright": "^1.25.0",
+        "monocart-reporter": "^1.1.4",
+        "nodemailer": "^6.8.0",
+        "playwright": "^1.28.1",
         "rimraf": "^3.0.2",
         "screencast-gif": "^1.0.1",
-        "semver": "^7.3.7",
+        "semver": "^7.3.8",
         "serialize-javascript": "^6.0.0",
         "shelljs": "^0.8.5",
-        "webpack": "^5.74.0",
-        "webpack-stats-report": "^2.0.2"
+        "webpack": "^5.75.0",
+        "webpack-stats-report": "^2.0.3"
     },
     "devDependencies": {
-        "eslint": "^8.22.0",
-        "eslint-config-plus": "^1.0.3",
+        "eslint": "^8.29.0",
+        "eslint-config-plus": "^1.0.5",
         "eslint-plugin-chain": "^2.0.0",
         "eslint-plugin-html": "^7.1.0"
     }

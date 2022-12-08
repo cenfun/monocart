@@ -3,7 +3,7 @@ module.exports = function(option) {
         name: 'Project Name',
         env: 'dev/qa/prod',
         type: 'Smoke/Regression',
-        //test url
+        // test url
         url: '',
         debug: false,
         spec: '',
@@ -14,7 +14,7 @@ module.exports = function(option) {
 
         },
 
-        //client helper
+        // client helper
         client: {
             name: 'monocart',
             entry: './client/index.js'
@@ -25,14 +25,18 @@ module.exports = function(option) {
             // userid: {
             //     username: ""
             // }
-        }
+        },
+
+        screenshot: 'only-on-failure',
+        video: 'on-first-retry'
+        // trace: 'retain-on-failure'
     };
 
-    //playwright runner config
+    // playwright runner config
     return {
         timeout: 30 * 1000,
         globalTimeout: 10 * 60 * 1000,
-        //reporter: 'list',
+        // reporter: 'list',
         testDir: './tests',
         testMatch: [/.*(job|test|spec)\.js/],
         retries: 1,
@@ -46,12 +50,7 @@ module.exports = function(option) {
                 }
             }
         }],
-        use: {
-            config: config,
-            screenshot: 'only-on-failure',
-            video: 'on-first-retry'
-            //trace: 'retain-on-failure'
-        }
+        use: config
     };
 };
 
