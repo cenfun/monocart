@@ -25,13 +25,14 @@ module.exports = function(option) {
             // userid: {
             //     username: ""
             // }
-        },
+        }
 
-        
+
     };
 
     // playwright runner config
     return {
+        metadata,
         timeout: 30 * 1000,
         globalTimeout: 10 * 60 * 1000,
         // reporter: 'list',
@@ -53,7 +54,16 @@ module.exports = function(option) {
             video: 'on-first-retry',
             trace: 'retain-on-failure'
         },
-        metadata
+        reporter: [
+            ['list'],
+            ['monocart-reporter', {
+                outputFile: '.temp/report/index.html',
+                trend: '.temp/report/index.json',
+                tags: {
+
+                }
+            }]
+        ]
     };
 };
 
