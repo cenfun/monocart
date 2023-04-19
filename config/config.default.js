@@ -1,5 +1,5 @@
 module.exports = function(option) {
-    const config = {
+    const metadata = {
         name: 'Project Name',
         env: 'dev/qa/prod',
         type: 'Smoke/Regression',
@@ -27,9 +27,7 @@ module.exports = function(option) {
             // }
         },
 
-        screenshot: 'only-on-failure',
-        video: 'on-first-retry'
-        // trace: 'retain-on-failure'
+        
     };
 
     // playwright runner config
@@ -50,7 +48,12 @@ module.exports = function(option) {
                 }
             }
         }],
-        use: config
+        use: {
+            screenshot: 'only-on-failure',
+            video: 'on-first-retry',
+            trace: 'retain-on-failure'
+        },
+        metadata
     };
 };
 
