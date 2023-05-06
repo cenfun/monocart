@@ -27,7 +27,6 @@ module.exports = function(option) {
             // }
         }
 
-
     };
 
     // playwright runner config
@@ -57,11 +56,7 @@ module.exports = function(option) {
         reporter: [
             ['list'],
             ['monocart-reporter', {
-                outputFile: '.temp/report/index.html',
-                trend: '.temp/report/index.json',
-                tags: {
-
-                }
+                outputFile: '.temp/report/index.html'
             }]
         ]
     };
